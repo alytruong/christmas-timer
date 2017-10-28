@@ -44,19 +44,19 @@ p {
   background-size: cover;
 }
 .bg1-image {
-  background-image: url("image/trees.jpg");
+  background-image: url("/christmas-timer/image/trees.jpg");
   min-height: 100%;
 }
 .bg2-image {
-  background-image: url("image/lights.jpg");
+  background-image: url("/christmas-timer/image/lights.jpg");
   min-height: 400px;
 }
 .bg3-image {
-  background-image: url("image/fireplace.jpg");
+  background-image: url("/christmas-timer/image/fireplace.jpg");
   min-height: 400px;
 }
 .bg4-image {
-  background-image: url("image/branch.jpg");
+  background-image: url("/christmas-timer/image/branch.jpg");
   min-height: 100%;
 }
 .block {
