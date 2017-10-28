@@ -3,27 +3,45 @@ body, html {
   margin: 0;
   padding: 0;
 }
-h2 {
-  color: green;
-  text-align: center;
-  margin: 5px 0;
-  padding: 0;
-  z-index: 1;
-  position: relative;
-}
 p {
   color: black;
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 50px;
+  margin: 0;
 }
 .navbar {
 
 }
-.parallax {
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
   width: 100%;
+  text-align: center;
+  color: #000;
+}
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  font-family: 'Allura', cursive;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+.caption span.borderT {
+  background-color: transparent;
+  font-family: 'Allura', cursive;
+  font-size: 35px;
+  color: #f7f7f7;
+}
+.bg1-image, .bg2-image, .bg3-image, .bg4-image {
+  position: relative;
+  opacity: 0.65;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  opacity: 0.65;
+  background-size: cover;
 }
 .bg1-image {
   background-image: url("../image/trees.jpg");
@@ -44,12 +62,19 @@ p {
 .block {
   background-color: white;
   width: 100%;
-  height: 300px;
+  height: 400px;
 }
 .quote {
-  font-size: 30px;
+  font-size: 45px;
   text-align: left;
-  margin: 50px auto;
+  font-family: 'Allura', cursive;
+  color: green;
+  letter-spacing: 3px;
+  padding-top: 90px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 0;
+  z-index: 1;
 }
 .footer {
   background-color: oatmeal;
