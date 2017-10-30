@@ -3,11 +3,21 @@ body, html {
   margin: 0;
   padding: 0;
 }
-p {
-  color: black;
-  font-family: 'Open Sans', sans-serif;
-  padding-left: 50px;
-  margin: 0;
+#intro {
+  font-family: 'Allura', cursive;
+  font-size: 60px;
+  font-weight: bold;
+  box-shadow: 2px;
+  color: gold;
+  letter-spacing: 5px;
+}
+#counter {
+  font-family: 'Allura', cursive;
+  font-size: 60px;
+  font-weight: bold;
+  box-shadow: 2px;
+  color: green;
+  letter-spacing: 5px;
 }
 .navbar {
 
@@ -15,21 +25,13 @@ p {
 .caption {
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 25%;
   width: 100%;
   text-align: center;
   color: #000;
 }
 .caption span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  font-family: 'Allura', cursive;
-  letter-spacing: 10px;
-  text-transform: uppercase;
-}
-.caption span.borderT {
+  top: 50%;
   background-color: transparent;
   font-family: 'Allura', cursive;
   font-size: 35px;
@@ -43,26 +45,26 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.bg1-image {
-  background-image: url("/christmas-timer/image/trees.jpg");
+.bg1-image { /* /christmas-timer/*/
+  background-image: url("image/trees.jpg");
   min-height: 100%;
 }
 .bg2-image {
-  background-image: url("/christmas-timer/image/lights.jpg");
+  background-image: url("image/lights.jpg");
   min-height: 400px;
 }
 .bg3-image {
-  background-image: url("/christmas-timer/image/fireplace.jpg");
+  background-image: url("image/fireplace.jpg");
   min-height: 400px;
 }
 .bg4-image {
-  background-image: url("/christmas-timer/image/branch.jpg");
+  background-image: url("image/branch.jpg");
   min-height: 100%;
 }
 .block {
   background-color: white;
   width: 100%;
-  height: 400px;
+  height: 500px;
 }
 .quote {
   font-size: 45px;

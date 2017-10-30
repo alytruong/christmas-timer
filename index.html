@@ -15,7 +15,6 @@
   <title>Countdown to Christmas!</title>
 
   <link href="https://fonts.googleapis.com/css?family=Allura|Open+Sans" rel="stylesheet">
-  <link href="script.js" rel="">
   <link href="style.css" rel="stylesheet">
 </head>
 
@@ -25,8 +24,8 @@
 
   <div class="bg1-image">
     <div class="caption">
-      <span class="border">
-      </span>
+      <p id="intro">Merry Christmas and Happy New Year</p>
+      <p id="counter"></p>
     </div>
   </div>
 
@@ -45,7 +44,7 @@
 
   <div class="bg2-image">
     <div class="caption">
-      <span class="borderT">
+      <span class="border">
           It's beginning to look like Christmas... Everywhere we go.
       </span>
     </div>
@@ -53,7 +52,7 @@
 
   <div class="block">
     <div class="caption">
-      <span class="borderT">
+      <span class="quote">
 
       </span>
     </div>
@@ -61,7 +60,7 @@
 
   <div class="bg3-image">
     <div class="caption">
-      <span class="borderT">
+      <span class="border">
           It's the most wonderful time of the year
       </span>
     </div>
@@ -73,5 +72,29 @@
 
   <div class="footer"></div>
 
+  <script>
+    var countDate = new Date("Dec 25, 2017 00:00:00").getTime();
+
+    var x = setInterval(function() {
+      var now = new Date().getTime();
+
+      var distance = countDate - now;
+
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("counter").innerHTML = days + "D " + hours + "H " + minutes + "M " + seconds + "S ";
+
+      if (distance == 0) {
+        document.getElementById("counter").innerHTML = "HO, HO, HO! It's Christmas Day!"
+      }
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("counter").innerHTML = "Until Next Year!";
+      }
+    }, 1000);
+  </script>
 </body>
 </html>
