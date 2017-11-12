@@ -3,24 +3,28 @@ body, html {
   margin: 0;
   padding: 0;
 }
-#intro {
+.intro {
   font-family: 'Allura', cursive;
   font-size: 60px;
   font-weight: bold;
   box-shadow: 2px;
-  color: gold;
   letter-spacing: 5px;
 }
 #counter {
   font-family: 'Allura', cursive;
   font-size: 60px;
   font-weight: bold;
-  box-shadow: 2px;
+  box-shadow: 5px;
   color: green;
   letter-spacing: 5px;
 }
-.navbar {
-
+.gold-text {
+  color: #c3a343;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent),
+  url("image/gold-glitter.jpg") repeat;
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
 }
 .caption {
   position: absolute;
@@ -46,7 +50,7 @@ body, html {
   background-size: cover;
 }
 .bg1-image { /* /christmas-timer/*/
-  background-image: url("image/trees.jpg");
+  background-image: url("image/mountains.jpg");
   min-height: 100%;
 }
 .bg2-image {
